@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <title>{{ name }}</title>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1>Hello my name is {{ name }}</h1>
+        <article>NPM : {{ npm }}</article>
+        <article>I am {{ age }} years old</article><br/>
+        <a href="{% url 'portofolio' %}"><button class="btn btn-outline-secondary">Lihat Halaman Portofolio</button></a><br/><br/>
+        <a href="{% url 'my_experience' %}"><button class="btn btn-outline-secondary">Lihat Halaman My Experience</button></a>
+    </div>
+</body>
+</html>

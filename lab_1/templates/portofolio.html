@@ -1,0 +1,59 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mohammad Fatoni</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'fa/css/font-awesome.css' %}">
+</head>
+<body>
+	<div class="header text-white bg-black padding-header">
+		<h4><span class="fa fa-home"></span> PORTOFOLIO</h4>
+	</div>
+	<div class="container-1">
+		<div class="flex-container-1 text-white">
+			<div class="img-profil">
+				<img src="{% static 'img/profil.jpg' %}">
+			</div>
+			<div id="info-1">
+				<h1>Mohammad Fatoni</h1>
+				<p>&ensp;&ensp;&ensp;&ensp; Perkenalkan nama saya Mohammad Fatoni. Bertempat tinggal di Pondok Cina, Depok, Beji, Jawa Barat. Bertanah kelahiran sumatra tepatnya di Bengkulu.<br/><br/>&ensp;&ensp;&ensp;&ensp; Sekarang saya sedang mendalami kegiatan pemrograman. Saya telah mendalami kegiatan ini sejak kelas 3 SMA dan berlanjut hingga kuliah. Saat ini saya lebih fokus pada Web Programming.</p><br/>
+				<div style="text-align: center">
+					<a href="{% url 'index' %}" class="django-index">
+						<button style="width: 10em;height:2.5em">Fungsi Umur </button>
+					</a>
+				</div><br/>
+				<div style="text-align: center">
+					<a href="{% url 'my_experience' %}" class="django-index">
+						<button style="width: 10em;height:2.5em">My Experience </button>
+					</a>
+				</div><br/>
+			</div>
+		</div>
+	</div>
+	<div class="container-2">
+		<h2 class="margin-con bg-dark text-white padding-2">Profil</h2>
+		<center><hr class="garis" /></center>
+		<div class="flex-container-2 text-white">
+			<div class="info-2">
+				<h4><span class="fa fa-check-square-o"></span> Nama Lengkap</h4>
+				<p>Mohammad Fatoni</p>
+				<h4><span class="fa fa-check-square-o"></span> Tanggal Lahir</h4>
+				<p>Curup, 9 Juli 1999</p>
+				<h4><span class="fa fa-check-square-o"></span> Asal Daerah</h4>
+				<p>Bengkulu</p>
+			</div>
+			<div class="info-2">
+				<h4><span class="fa fa-check-square-o"></span> Pekerjaan</h4>
+				<p>Mahasiswa Di Universitas Gunadarma</p>
+				<h4><span class="fa fa-check-square-o"></span> Harapan Mengikuti Kelas Beling.id</h4>
+				<p class="text-justify"> Harapan saya setelah selesai mengikuti kelas Beling.id ini yaitu bisa semakin lancar ngoding, bisa semakin bermanfaat untuk orang disekitar saya atas ilmu yang didapat dari kelas Beling.id, dan bisa mendapat perkerjaan yang bagus pas udah selesai kuliah.</p><br/>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p>Mohammad Fatoni - mohfatoni@yahoo.com</p>
+	</div>
+</body>
+</html>
